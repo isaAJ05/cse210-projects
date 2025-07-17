@@ -10,19 +10,19 @@ class Program
         job1._company = "Stark Industries";
         job1._startYear = 2020;
         job1._endYear = 2025;
+        job1.DisplayJobDetails();
 
         Job job2 = new Job();
         job2._jobTitle = "Accountant";
         job2._company = "Juliao Family";
         job2._startYear = 2015;
         job2._endYear = 2025;
+        job2.DisplayJobDetails();
 
         Resume myResume = new Resume();
-        myResume._name = "Isabella Arrieta";
-
+        myResume.
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
-
         myResume.DisplayJobsList();
 
     }
