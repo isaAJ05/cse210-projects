@@ -1,0 +1,11 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World! This is the Fractions Project.");
+        Fraction fraction_1 = new Fraction();
+        fraction_1
+    }
+}

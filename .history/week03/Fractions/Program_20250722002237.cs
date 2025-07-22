@@ -13,7 +13,7 @@ class Program
         Console.WriteLine(fraction_2.GetDecimalValue());
         Fraction fraction_3 = new Fraction(6, 7);
         Console.WriteLine(fraction_3.GetFractionString());
-        Console.WriteLine(fraction_3.GetDecimalValue());
+        Console.WriteLine(fraction_1.GetDecimalValue());
 
         
     }
