@@ -16,6 +16,7 @@ class Program
             aux = Console.ReadLine();
             Console.Clear();
             Random random = new Random();
+            int count = scripture._words.Lenght;
             scripture.HideRandomWords(random.Next(1,10 ));
             Console.WriteLine("BBB");
         }

@@ -1,0 +1,47 @@
+using System;
+public class Reference
+{
+    private string _book;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
+
+    public Reference()
+    {
+    }
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+    }
+    public Reference(string book, int chapter, int startVerse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = startVerse;
+        _endVerse = endVerse;
+    }
+
+    public void SetBook(string book)
+    {
+        _book = book;
+    }
+    public string GetBook()
+    {
+        return _book;
+    }
+    
+    public void SetChapter(int chapter)
+    {
+        _chapter = book;
+    }
+    public string GetBook()
+    {
+        return _book;
+    }
+    public string GetDisplayText()
+    {
+
+    }
+}

@@ -7,17 +7,21 @@ class Program
     {
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
         Reference reference = new Reference("Alma", 2, 2, 2);
-        Scripture scripture = new Scripture(reference, "here is a lot of text");
-        Console.WriteLine("AAA");
-        string aux = "";
-        while (aux != "quit")
+        //Scripture scripture = new Scripture(reference, "here the text");
+        // This will start by displaying "AAA" and waiting for the user to press the enter key
+        while (Console.ReadLine().ToLower() != "quit")
         {
+            Console.WriteLine("BBB");
             Console.WriteLine("Please enter to continue or type 'quit' to finish:");
-            aux = Console.ReadLine();
+            Console.ReadLine();
+
+            // This will clear the console
             Console.Clear();
-            Random random = new Random();
-            scripture.HideRandomWords(random.Next(1,10 ));
+
+            // This will show "BBB" in the console where "AAA" used to be
             Console.WriteLine("BBB");
         }
+
+
     }
 }

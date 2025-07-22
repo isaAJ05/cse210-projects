@@ -15,8 +15,8 @@ class Program
             Console.WriteLine("Please enter to continue or type 'quit' to finish:");
             aux = Console.ReadLine();
             Console.Clear();
-            Random random = new Random();
-            scripture.HideRandomWords(random.Next(1,10 ));
+            Random random = new Random()
+            scripture.HideRandomWords()
             Console.WriteLine("BBB");
         }
     }

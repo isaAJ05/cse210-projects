@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
         Reference reference = new Reference("Alma", 2, 2, 2);
-        Scripture scripture = new Scripture(reference, "here is a lot of text");
+        Scripture scripture = new Scripture()
         Console.WriteLine("AAA");
         string aux = "";
         while (aux != "quit")
@@ -15,8 +15,6 @@ class Program
             Console.WriteLine("Please enter to continue or type 'quit' to finish:");
             aux = Console.ReadLine();
             Console.Clear();
-            Random random = new Random();
-            scripture.HideRandomWords(random.Next(1,10 ));
             Console.WriteLine("BBB");
         }
     }
