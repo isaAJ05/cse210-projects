@@ -4,13 +4,9 @@ public class Scripture
     private Reference _reference = new Reference();
     public List<Word> _words = new List<Word>();
 
-    public Scripture()
-    {
-        
-    }
     public Scripture(Reference reference, string text)
     {
-        _reference = reference;
+        
         string[] words = text.Split(" ");
         foreach (string word in words)
         {
@@ -21,19 +17,8 @@ public class Scripture
 
     public void HideRandomWords(int numberToHide)
     {
-        int count = 0;
-        foreach (Word word in _words)
-        {
-            count += 1;
-        }
-        
-        for (int i = 0; i < numberToHide; i++)
-        {
-            Random random = new Random();
-            int random_number = random.Next(0, count);
-            _words[random_number].Hide();
-        }
-        
+        _words[numberToHide].Hide();
+
     }
 
     public string GetDisplayText()
@@ -41,25 +26,25 @@ public class Scripture
         string script = "";
         foreach (Word word in _words)
         {
-            script += word.GetDisplayText() + " ";
+            script += word.GetDisplayText();
         }
 
-        return $"{_reference.GetDisplayText()} {script}";
+        return script;
     }
 
     public bool IsCompletelyHidden()
     {
         foreach (Word word in _words)
         {
-            if (word.IsHidden() == false)
+            if (word.IsHidden == false)
             {
-                return false;
+                
             }
         }
 
-        return true;
+        return script;
     }
-    
+    }
+
+
 }
-
-

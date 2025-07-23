@@ -57,7 +57,7 @@ class Program
             aux = Console.ReadLine();
             Console.Clear();
             Random random2 = new Random();
-            scripture.HideRandomWords(random2.Next(1,10 ));//hide random words (random number 1-10)
+            scripture.HideRandomWords(random2.Next(1,10 ));
             Console.WriteLine(scripture.GetDisplayText());
         }
     }

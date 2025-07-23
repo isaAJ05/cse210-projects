@@ -51,13 +51,13 @@ class Program
 
         Console.WriteLine(scripture.GetDisplayText());
         string aux = "";
-        while (aux != "quit" && !scripture.IsCompletelyHidden())// if the user doesnt write quit and scripture is false
+        while (aux != "quit" && !scripture.IsCompletelyHidden())// if the user doesntquit and scripture is false
         {
             Console.WriteLine("Please enter to continue or type 'quit' to finish:");
             aux = Console.ReadLine();
             Console.Clear();
             Random random2 = new Random();
-            scripture.HideRandomWords(random2.Next(1,10 ));//hide random words (random number 1-10)
+            scripture.HideRandomWords(random2.Next(1,10 ));
             Console.WriteLine(scripture.GetDisplayText());
         }
     }

@@ -4,10 +4,6 @@ public class Scripture
     private Reference _reference = new Reference();
     public List<Word> _words = new List<Word>();
 
-    public Scripture()
-    {
-        
-    }
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
@@ -21,19 +17,10 @@ public class Scripture
 
     public void HideRandomWords(int numberToHide)
     {
-        int count = 0;
-        foreach (Word word in _words)
-        {
-            count += 1;
-        }
-        
-        for (int i = 0; i < numberToHide; i++)
-        {
-            Random random = new Random();
-            int random_number = random.Next(0, count);
-            _words[random_number].Hide();
-        }
-        
+        Random random = new Random();
+        random.Next(1,10 ));
+        _words[numberToHide].Hide();
+
     }
 
     public string GetDisplayText()

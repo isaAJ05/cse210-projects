@@ -8,8 +8,7 @@ Purpose: People often try to memorize poems or passages of scripture. One of the
 while they are practicing, but they may not be able to recite the whole scripture from memory just yet.
 To help solve this problem so that people can better memorize a scripture, write a program that displays the full scripture and then hides 
 a few words at a time until the complete scripture is hidden.
-Additional Feature: The program work with a list of scriptures rather than a single one. 
-It choose scriptures at random to present to the user. The file is called scriptures.txt. It uses setters to the reference (SetBook,SetChapter,SetVerse,SetEndverse).
+Additional Feature: Have your program work with a library of scriptures rather than a single one. Choose scriptures at random to present to the user.
 
 **/
 class Program
@@ -51,13 +50,13 @@ class Program
 
         Console.WriteLine(scripture.GetDisplayText());
         string aux = "";
-        while (aux != "quit" && !scripture.IsCompletelyHidden())// if the user doesnt write quit and scripture is false
+        while (aux != "quit" && !scripture.IsCompletelyHidden())
         {
             Console.WriteLine("Please enter to continue or type 'quit' to finish:");
             aux = Console.ReadLine();
             Console.Clear();
             Random random2 = new Random();
-            scripture.HideRandomWords(random2.Next(1,10 ));//hide random words (random number 1-10)
+            scripture.HideRandomWords(random2.Next(1,10 ));
             Console.WriteLine(scripture.GetDisplayText());
         }
     }

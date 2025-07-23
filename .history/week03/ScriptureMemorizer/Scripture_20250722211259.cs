@@ -4,10 +4,6 @@ public class Scripture
     private Reference _reference = new Reference();
     public List<Word> _words = new List<Word>();
 
-    public Scripture()
-    {
-        
-    }
     public Scripture(Reference reference, string text)
     {
         _reference = reference;
@@ -26,14 +22,16 @@ public class Scripture
         {
             count += 1;
         }
-        
+        Random random = new Random();
+        int random_number = random.Next(1, count);
         for (int i = 0; i < numberToHide; i++)
         {
-            Random random = new Random();
-            int random_number = random.Next(0, count);
-            _words[random_number].Hide();
+            _words[numberToHide].Hide();
         }
+
         
+        
+
     }
 
     public string GetDisplayText()
