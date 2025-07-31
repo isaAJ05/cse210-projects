@@ -46,7 +46,7 @@ class Program
         {
             Console.Write(v.DisplayVideo());
             Console.WriteLine($", {v.NumberOfComments()}");
-            v.DisplayComments();
+            .DisplayComment();
             Console.WriteLine("");
         }
 

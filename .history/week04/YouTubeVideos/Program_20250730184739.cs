@@ -38,17 +38,9 @@ class Program
         video4.AddComment(comment43);
 
         _videos.Add(video1);
-        _videos.Add(video2);
-        _videos.Add(video3);
-        _videos.Add(video4);
-
-        foreach (Video v in _videos)
-        {
-            Console.Write(v.DisplayVideo());
-            Console.WriteLine($", {v.NumberOfComments()}");
-            v.DisplayComments();
-            Console.WriteLine("");
-        }
+        _videos.Add(video1);
+        _videos.Add(video1);
+        _videos.Add(video1);
 
     }
 }

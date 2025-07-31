@@ -45,8 +45,9 @@ class Program
         foreach (Video v in _videos)
         {
             Console.Write(v.DisplayVideo());
-            Console.WriteLine($", {v.NumberOfComments()}");
-            v.DisplayComments();
+            Console.WriteLine($"{v.NumberOfComments()}");
+            
+            Console.WriteLine(v.DisplayComments());
             Console.WriteLine("");
         }
 
