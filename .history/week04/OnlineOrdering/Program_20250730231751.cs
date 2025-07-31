@@ -19,7 +19,6 @@ class Program
         Console.WriteLine(_order.PackingLabel());
         Console.WriteLine(_order.ShippingLabel());
         Console.WriteLine($"Total Cost: ${_order.CalculateTotalCost()}");
-        
         Console.WriteLine("-------------------------------------------------");
 
         Address _address2 = new Address("Street 19A 14-81", "Barranquilla", "Atlántico", "Colombia");

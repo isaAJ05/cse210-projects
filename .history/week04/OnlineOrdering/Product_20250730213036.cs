@@ -1,0 +1,7 @@
+using System;
+public class Product
+{
+    private string _name;
+    private int _productID;
+    private double 
+}
