@@ -1,0 +1,21 @@
+using System;
+
+public class WritingAssignment : Assignment
+{
+    private string _    private string _problems;
+
+    public WritingAssignment() : base()
+    {
+
+    }
+    public WritingAssignment(string studentName, string topic, string textbookSection, string problems) : base(studentName, topic)
+    {
+        _textbookSection = textbookSection;
+        _problems = problems;
+
+    }
+    public string GetHomeworkList()
+    {
+        return $"{_textbookSection} {_problems}";
+        }
+    }
