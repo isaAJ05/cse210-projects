@@ -11,9 +11,5 @@ class Program
         shapes.Add(circle);
         Rectangle rectangle = new Rectangle("Green", 2, 5);
         shapes.Add(rectangle);
-        foreach (Shape shape in shapes)
-        {
-            Console.WriteLine($"Shape Color: {shape.GetColor()}, Area: {shape.GetArea()}");
-        }
     }
 }
