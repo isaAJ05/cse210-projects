@@ -1,0 +1,31 @@
+using System;
+public class Activity
+{
+    private DateTime _date;
+    protected int _minutes;
+    p string _name;
+
+    public Activity(DateTime date, int minutes, string name)
+    {
+        _date = date;
+        _minutes = minutes;
+        _name = name;
+    }
+    
+    public virtual double GetDistance()
+    {
+        return 0.0;
+    }
+    public virtual double GetSpeed()
+    {
+        return 0.0;
+    }
+    public virtual double GetPace()
+    {
+        return 0.0;
+    }
+    public string GetSummary()
+    {
+        return $"{_date.ToShortDateString()} {_name} ({_minutes} min): Distance {GetDistance():F2} km, Speed: {GetSpeed():F2} kph, Pace: {GetPace():F2} min/per km";
+    }
+}

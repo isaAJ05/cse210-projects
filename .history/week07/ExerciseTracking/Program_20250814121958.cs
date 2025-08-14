@@ -8,7 +8,7 @@ class Program
         Running r1 = new Running("Running", new DateTime(2025, 5, 24), 30, 5);
         activities.Add(r1);
 
-        Cycling c1 = new Cycling("Cycling", new DateTime(2024, 11, 18), 45, 20);
+        Cycling c1 = new Cycling("Cycling", new DateTime(2025, 11, 18), 45, 20);
         activities.Add(c1);
 
         Swimming s1 = new Swimming("Swimming", new DateTime(2025, 6, 18), 60, 40);
