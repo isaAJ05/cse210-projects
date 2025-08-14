@@ -7,7 +7,6 @@ class Program
         int number = 1;
         while (number == 1)
         {
-            Console.Clear();
             Console.WriteLine("Menu Options: ");
             Console.WriteLine("1. Start Breathing Activity");
             Console.WriteLine("2. Start Reflection Activity");
@@ -53,12 +52,11 @@ class Program
                     "When have you felt the Holy Ghost this month?",
                     "Who are some of your personal heroes?"
                         };
-                    ListingActivity listingActivity = new ListingActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", prompts2);
+                    ListingActivity listingActivity = new ListingActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", prompts2.Length, prompts2);
                     listingActivity.Run();
                     break;
                 case "4":
-                    Console.WriteLine("Goodbye!");
-                    number = 0;
+    
                     break;
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");

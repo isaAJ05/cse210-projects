@@ -1,0 +1,30 @@
+using System;
+public class ListingActivity : Activity
+{
+    private int _count;
+    private string[] _prompts;
+
+    public ListingActivity(string name, string description, int duration, int count, string[] prompts)
+        : base(name, description, duration)
+    {
+        _1
+    }
+
+    public void Run()
+    {
+        DisplayStartingMessage();
+        ShowSpinner(3);
+        DisplayItems();
+        ShowCountdown(5);
+        DisplayEndingMessage();
+    }
+
+    private void DisplayItems()
+    {
+        Console.WriteLine("Here are the items to list:");
+        foreach (var item in _items)
+        {
+            Console.WriteLine($"- {item}");
+        }
+    }
+}
